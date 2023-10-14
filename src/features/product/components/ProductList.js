@@ -565,12 +565,13 @@ export default function ProductList() {
     <div>
       <div className="bg-white">
         <div>
-          {/* Mobile filter dialog */}
+          {/* Mobile filter dialog starts here */}
           <MobileFilter
             mobileFiltersOpen={mobileFiltersOpen}
             setMobileFiltersOpen={setMobileFiltersOpen}
             handleFilter={handleFilter}
           />
+          {/* Mobile filter dialog ends here */}
 
           <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
@@ -648,14 +649,15 @@ export default function ProductList() {
               </h2>
 
               <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-                {/* Filters */}
+                {/* Desktop Filters starts here */}
                 <DesktopFilter handleFilter={handleFilter} />
 
-                {/* Product grid */}
+                {/* Product grid starts here */}
                 <div className="lg:col-span-3">
                   {/* product list */}
                   <ProductGrid products={products} />
                 </div>
+                {/* Product grid ends here */}
               </div>
             </section>
             {/* Pagination Starts */}
